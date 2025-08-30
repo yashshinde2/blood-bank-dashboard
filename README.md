@@ -1,73 +1,46 @@
-# Welcome to your Lovable project
+# Blood Bank Dashboard
 
-## Project info
+## About
 
-**URL**: https://lovable.dev/projects/36e21fcb-f09c-4a4e-818a-f12e2fbdc3b7
+Blood Bank Dashboard is a modern web application built with React, Vite, TypeScript, and Tailwind CSS. It provides an interactive interface for managing blood bank inventory, donor records, and appointments. The dashboard is designed for ease of use, real-time updates, and seamless integration with Google Sheets for data storage.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Dashboard Overview**: View key metrics such as total donors, confirmed appointments, and available blood units.
+- **Donor Management**: Track donor records, appointment statuses, and donation types.
+- **Inventory Editor**: Manage and update blood, plasma, and platelet inventory.
+- **Google Sheets Integration**: Fetches and updates data directly from Google Sheets.
+- **Responsive UI**: Built with shadcn/ui and Radix UI for a clean, accessible design.
 
-**Use Lovable**
+## How It Works
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/36e21fcb-f09c-4a4e-818a-f12e2fbdc3b7) and start prompting.
+1. **Data Fetching**: The app uses custom React hooks to fetch donor and inventory data from Google Sheets in CSV format.
+2. **Dashboard Display**: Metrics and tables are rendered using reusable components, providing a snapshot of current operations.
+3. **Inventory Management**: Users can edit inventory levels directly from the dashboard.
+4. **Real-Time Updates**: The dashboard header displays the last updated time and allows manual refreshes.
+5. **Error Handling**: If data cannot be fetched, the app falls back to demo data and displays a warning.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+1. **Install dependencies**:
+	```
+	npm install
+	```
+2. **Run the development server**:
+	```
+	npm run dev
+	```
+3. **Build for production**:
+	```
+	npm run build
+	```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
+- React
 - Vite
 - TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/36e21fcb-f09c-4a4e-818a-f12e2fbdc3b7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- shadcn/ui
+- Radix UI
+- Google Sheets API
